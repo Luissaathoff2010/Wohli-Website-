@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>wohlii urlaub – Unterkünfte direkt beim Gastgeber</title>
+  <meta name="description" content="wohlii-urlaub.de: Ferienwohnungen, Zimmer mit Frühstück und Hotels in ganz Deutschland – freie Zeiträume auf einen Blick, Anfrage und Buchung direkt beim Gastgeber, ohne Buchungsprovision.">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/wohlii.css">
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Unterkünfte in ganz Deutschland · direkt beim Gastgeber</p>
+        <h1>Das Wesentliche zählt: <em>Menschen</em>, die sich auf Sie freuen.</h1>
+        <p class="hero-lead">Freie Zeiträume auf einen Blick, Anfrage per E-Mail oder Anruf – und gebucht wird direkt beim Gastgeber. Ohne Buchungsprovision, mit echten Ansprechpartnern vor Ort.</p>
+      </div>
+      <div class="hero-mosaic" aria-hidden="true">
+        <figure><img src="assets/img/macro/sand.jpg" alt=""><figcaption>Sand zwischen den Zehen</figcaption></figure>
+        <figure><img src="assets/img/macro/muschel.jpg" alt=""></figure>
+        <figure><img src="assets/img/macro/strick.jpg" alt=""></figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <form class="search" id="search" role="search" aria-label="Unterkunft suchen">
+          <label for="s-region">Region oder Ort
+            <input id="s-region" list="regions" placeholder="z. B. Nordsee oder Norderney" autocomplete="off">
+          </label>
+          <datalist id="regions"></datalist>
+          <label for="s-cat">Kategorie
+            <select id="s-cat"><option value="">Alle Unterkünfte</option></select>
+          </label>
+          <label for="s-month">Monat
+            <select id="s-month"></select>
+          </label>
+          <button class="btn btn-primary" type="submit">Suchen</button>
+        </form>
+    </div>
+  </section>
+
+  <section class="wrap" aria-label="Unsere Werte">
+    <div class="values">
+      <a class="value" href="konzept.html#herzlich" style="text-decoration:none">
+        <img src="assets/img/macro/koralle.jpg" alt="">
+        <div><b>herzlich</b><span>wohlfühlen</span><p>Gastgeber, die Sie beim Namen kennen und persönlich begrüßen.</p></div>
+      </a>
+      <a class="value" href="konzept.html#heimelig" style="text-decoration:none">
+        <img src="assets/img/macro/blatt.jpg" alt="">
+        <div><b>heimelig</b><span>inne halten</span><p>Kleine Häuser, echte Materialien, Ruhe statt Rummel.</p></div>
+      </a>
+      <a class="value" href="konzept.html#putzmunter" style="text-decoration:none">
+        <img src="assets/img/macro/abendlicht.jpg" alt="">
+        <div><b>putzmunter</b><span>inspirieren</span><p>Blitzsauber übergeben – und mit Tipps, die in keinem Reiseführer stehen.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap section" id="brett" aria-labelledby="brett-title">
+    <div class="board-head">
+      <div>
+        <p class="eyebrow">Das Schwarze Brett</p>
+        <h2 id="brett-title">Freie Zeiträume im <span id="board-month">…</span></h2>
+        <p class="small muted" id="board-count" aria-live="polite"></p>
+      </div>
+      <div class="board-tools">
+        <div class="month-nav">
+          <button type="button" id="m-prev" aria-label="Vorheriger Monat">‹</button>
+          <strong id="m-label">…</strong>
+          <button type="button" id="m-next" aria-label="Nächster Monat">›</button>
+        </div>
+        <label class="check small"><input type="checkbox" id="only-free" checked> nur mit freien Nächten</label>
+        <div class="tabs view-toggle" role="tablist" aria-label="Ansicht">
+          <button type="button" role="tab" aria-selected="true" data-view="list">Liste</button>
+          <button type="button" role="tab" aria-selected="false" data-view="map">Karte</button>
+        </div>
+      </div>
+    </div>
+    <div class="board-layout" id="board-layout" data-view="list">
+      <div class="board-list" id="board-list"></div>
+      <div class="board-map" id="board-map" aria-label="Karte der Unterkünfte"></div>
+    </div>
+    <div class="cal-legend small" style="margin-top:1rem"><span><i class="lg free"></i>frei</span><span><i class="lg booked"></i>belegt</span><span><abbr class="ph">PH</abbr> Platzhalter-Angabe</span><span><span class="chip chip-demo">Demo</span> erfundener Beispiel-Eintrag</span></div>
+  </section>
+</main>
+<script src="js/config.js"></script>
+<script src="js/fotos.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages/home.js"></script>
+</body>
+</html>
